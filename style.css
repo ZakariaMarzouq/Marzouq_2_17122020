@@ -1,0 +1,121 @@
+/* GENERAL */
+
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    transition: color 1s;
+    font-size: 1em;
+}
+
+a:hover{
+    text-decoration: none;
+    text-shadow: 8px 8px 8px rgb(170, 170, 170);
+    color:#0065FC;   
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+#logo{
+    margin-left: 20px;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 1em;
+}
+
+.inscription{
+    display: flex;
+    flex-direction: row;
+    margin-left: 170px;
+}
+
+.presentation{
+    margin-left: 20px;
+}
+
+.presentation h1
+{
+    width: 300px;
+}
+
+.recherche{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+   
+}
+.recherche form{
+    display: flex;
+    align-content: flex-start;
+}
+
+.icone_maps{
+    background-color: #f2f2f2;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.recherche input{
+    border: 0.1px solid #f2f2f2;
+    padding: 20px 20px;
+}
+
+.recherche form input{
+    font-size: 1.2em;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
+.button{
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: -15px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #0065FC;
+    border:none;
+}
+
+
+
+
+
+
+
+
+
