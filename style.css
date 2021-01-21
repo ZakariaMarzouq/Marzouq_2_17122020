@@ -68,13 +68,14 @@ h2{
 }
 
 .recherche{
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-   
+    margin-right: 20px;
+    margin-top: 40px;
 }
+
 .recherche form{
     display: flex;
     align-content: flex-start;
@@ -97,9 +98,8 @@ h2{
     font-size: 1.2em;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 15px;
 }
-
 
 .button{
     border-radius: 20px;
@@ -109,6 +109,53 @@ h2{
     color: white;
     background-color: #0065FC;
     border:none;
+}
+
+.filtre{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtre h2{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.filtre ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -25px;
+}
+
+.categorie li{
+    border-right:#cecdcd solid 2px;
+    border-bottom: #cecdcd solid 2px;
+    border-top: #cecdcd solid 2px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.categorie li i{
+    background-color:#DEEBFF;
+    color: #0065FC;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.categorie li a{
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: black;
 }
 
 
