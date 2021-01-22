@@ -308,6 +308,7 @@ p{
 #activite{
     display: flex;
     flex-direction:column;
+    margin-bottom: 30px;
 }
 
 #activite h2{
@@ -342,6 +343,31 @@ p{
     margin-left: 20px;
 }
 
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 480px;
+    background-color: #F2F2F2;
+    padding-top: 40px;
+}
+
+.footer ul{
+    margin-left: -20px;
+    line-height: 1.9;
+}
+
+.footer h3{
+    margin-left: 20px;
+}
+
+.a_propos{
+    margin-bottom: 50px;
+}
+
+.nos_hebergements{
+    margin-bottom: 50px;
+}
 
 
 
