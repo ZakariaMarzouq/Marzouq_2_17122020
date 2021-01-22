@@ -11,6 +11,7 @@ a{
     text-decoration: none;
     transition: color 1s;
     font-size: 1em;
+    color: black;
 }
 
 a:hover{
@@ -29,7 +30,11 @@ h1{
 }
 
 h2{
-    font-size: 1.2em;
+    font-size: 1.5em;
+}
+
+h3{
+    font: 0.5em;
 }
 
 p{
@@ -93,11 +98,11 @@ p{
 
 .recherche input{
     border: 0.1px solid #f2f2f2;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .recherche form input{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 15px;
@@ -120,7 +125,7 @@ p{
     flex-direction: column;
 }
 
-.filtre h2{
+.filtre h3{
     margin-left: 20px;
     margin-top: 40px;
     font-size: 1.2em;
@@ -188,10 +193,7 @@ p{
 #section_globale{
     display: flex;
     flex-direction: column;
-
-    background-color: aquamarine;
     width: 100%;
-    height: 3379px;
 }
 
 /* SECTION POPULAIRES */
@@ -207,7 +209,7 @@ p{
     padding-bottom: 20px;
 }
 
-#section_populaire h1
+#section_populaire h2
 {
     padding-right: 100px;
 }
@@ -228,6 +230,7 @@ p{
     padding: 5px;
     border-radius: 20px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 8px rgb(170, 170, 170);
 }
 
 .card_populaire p{
@@ -248,7 +251,6 @@ p{
     font-size: .7rem;
 }
 
-
 #hebergements{
     display: flex;
     flex-direction: column;
@@ -259,7 +261,7 @@ p{
     margin-top: 40px;
 }
 
-#hebergements h1{
+#hebergements h2{
     margin-left: 20px;
 }
 
@@ -278,10 +280,11 @@ p{
     border-radius: 20px;
     padding: 5px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 8px rgb(170, 170, 170);
 }
 
 .info_card_hebergement{
-    line-height: 0.7;
+    line-height: 0.6;
     margin-left: 15px;
 }
 
@@ -291,15 +294,56 @@ p{
     height: 115px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
 }
 
+.afficher_plus{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
 
+/* SECTION ACTIVITES */
 
+#activite{
+    display: flex;
+    flex-direction:column;
+}
+
+#activite h2{
+    margin-left: 20px;   
+}
 
 .resultat_activite{
-    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px
 }
+
+.card_activite{
+    background-color: white;
+    width: 335px;
+    height: 188px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgb(170, 170, 170);
+    margin-bottom: 20px;
+}
+
+.img_card_activite{
+    object-fit: cover;
+    width: 100%;
+    height: 135px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card_activite h3{ 
+    margin-left: 20px;
+}
+
+
+
 
 
 
