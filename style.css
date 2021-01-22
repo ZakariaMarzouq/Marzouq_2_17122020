@@ -201,6 +201,8 @@ p{
 #section_populaire{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
     background-color: #F2F2F2;
     width: 100vw;
@@ -220,6 +222,11 @@ p{
     margin-right: 0%;
 }
 
+.element_populaire{
+    display: flex;
+    justify-content: space-between;
+}
+
 .card_populaire{
     background-color: white;
     display: flex;
@@ -231,6 +238,10 @@ p{
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 8px rgb(170, 170, 170);
+}
+
+.card_populaire h3{
+    
 }
 
 .card_populaire p{
