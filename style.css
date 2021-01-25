@@ -422,8 +422,7 @@ p{
         flex-wrap: wrap;
         align-items: center;
     }
-    
-
+ 
     #hebergements{
         margin-top: 0;
         height: 750px;
@@ -466,10 +465,21 @@ p{
         flex-direction: row;
         justify-content: space-around;
     }
-
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 920px){
+    #section_populaire:nth-child(1){
+        order: 2;
+    }
+
+    #hebergements:nth-child(2){
+        order: 1;
+    }
+
+    #activite:nth-child(3){
+        order: 3;
+    }
+
     .card_populaire{
         width: 400px;
     }
@@ -493,12 +503,11 @@ p{
     .card_activite h3{
         text-align: center;
         font-size: large;
+        margin-left: 0;
     }
 }
 
-
-
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
         #section_globale{
         flex-direction: row;
         flex-wrap: wrap;
@@ -514,16 +523,54 @@ p{
         border-radius: 30px;
         padding: 20px;
     }
-        
 
+    .card_hebergement{
+        width: 335px;
+    }
+}
 
+@media screen and (min-width: 1280px){
+    #hebergements{
+        background-color: #F2F2F2;
+        width: 60%;
+        height: 620px;
+        margin-left: 2%;
+        margin-right: 0%;
+        border-radius: 20px;
+        padding: 20px;
+    }
 
+    .card_hebergement{
+        width: 245px;
+    }
 
+    #section_populaire{
+        margin-left: 0;
+        margin-right: 2%;
+        width: 30%;
+        border-radius: 20px;
+        height: 620px;
+        margin-left: 30px;
+    }
 
+    .card_populaire{
+        width: 100%;
+    }
+
+    .img_card_populaire{
+        width: 127px;
+    }
+
+  
 
 
 
 }
+
+
+
+
+
 
 
 
