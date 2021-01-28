@@ -482,7 +482,7 @@ p{
     }
 }
 
-@media screen and (min-width: 690px){
+@media screen and (min-width: 590px){
 
     /* HEADER */
     .header{
@@ -626,6 +626,16 @@ p{
     .infos_footer{
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 620px){
+    #activite h2{
+        margin-left: 65px;
+    }
+
+    #hebergements h2{
+        margin-left: 65px; 
     }
 }
 
