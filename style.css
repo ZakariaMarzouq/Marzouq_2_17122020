@@ -57,7 +57,7 @@ p{
 }
 
 .inscription{
-    margin-left: 150px;
+    margin-left: 158px;
 }
 
 .inscription a{
@@ -87,7 +87,7 @@ p{
 
 .lien_activites{
     border-bottom: solid #f2f2f2f2 4px;
-    padding: 0 60px 15px 60px;
+    padding: 0 63px 15px 63px;
 }
 
 .lien_activites a{
@@ -139,6 +139,10 @@ p{
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 15px;
+}
+
+.button_2{
+    display: none;
 }
 
 .button{
@@ -265,7 +269,7 @@ p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 330px;
     height: 145px;
     padding: 5px;
     border-radius: 20px;
@@ -317,7 +321,7 @@ p{
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 335px;
+    width: 330px;
     height: 200px;
     border-radius: 20px;
     padding: 5px;
@@ -423,21 +427,29 @@ p{
     
     .lien_activites{
         border-bottom: solid #f2f2f2f2 4px;
-        padding: 0 55px 15px 55px;
+        padding: 0 58px 15px 58px;
         color: #333;
-        margin-right: -30px;
+        margin-right: -36px;
     }
 
     .inscription{
-        margin-left: 130px;
+        margin-left: 140px;
     }
 
     #section_populaire, #hebergements, #activite{
-        width: 350px;
+        width: 355px;
+    }
+
+    .element_populaire{
+        justify-content: space-around;
     }
 
     .card_populaire{
-        width: 320px;
+        margin-right: 2px;
+    }
+
+    #hebergements h2, #activite h2{
+        margin-left: 10px;
     }
 
     .footer{
@@ -460,7 +472,7 @@ p{
     
     .lien_activites{
         border-bottom: solid #f2f2f2f2 4px;
-        padding: 0 70px 15px 70px;
+        padding: 0 74px 15px 73px;
         color: #333;
         margin-right: 0;
     }
@@ -471,6 +483,8 @@ p{
 }
 
 @media screen and (min-width: 690px){
+
+    /* HEADER */
     .header{
         justify-content: space-between;
         margin-bottom: 30px;
@@ -507,6 +521,21 @@ p{
     .lien_hebergements, .lien_activites, .lien_inscription{
         font-size: 1.1em;
     }
+
+    .button{
+        display: none;
+    }
+
+    .button_2{
+        display: flex;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 20px 25px;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #0065FC;
+        border:none;
+    }
     
     .filtre{
         flex-direction: row;
@@ -515,6 +544,8 @@ p{
     .categorie{
         margin-left: 20px;
     }
+
+    /* SECTION GLOBALE + HEBERGEMENTS + LES +POPULAIRES */
 
     #section_populaire:nth-child(1){
         order: 1;
@@ -547,6 +578,10 @@ p{
         box-shadow: 1px 1px 8px rgb(170, 170, 170);
     }
 
+    #hebergements h2{
+        margin-left: 115px;
+    }
+
     .resultat_hebergement{
         justify-content: space-around;
     }
@@ -558,6 +593,12 @@ p{
         margin-bottom: 50px;
         border-radius: 50px;
         box-shadow: 1px 1px 8px rgb(170, 170, 170);
+    }
+
+    /* SECTION ACTIVITES */
+
+    #activite h2{
+        margin-left: 132px;
     }
 
     .resultat_activite{
@@ -575,6 +616,8 @@ p{
     .img_card_activite_1, .img_card_activite_2, .img_card_activite_3, .img_card_activite_4, .img_card_activite_5, .img_card_activite_6{
         height: 195px;
     }
+
+    /* FOOTER */
 
     .footer{
         height: 200px;
@@ -632,6 +675,10 @@ p{
         margin-right: 70px;
     }
 
+    #hebergements h2{
+        margin-left: 23px;
+    }
+
     #hebergements{
         background-color: #F2F2F2;
         width: 80%;
@@ -652,7 +699,7 @@ p{
     }
 
     #activite h2{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .card_activite_1, .card_activite_2, .card_activite_3, .card_activite_4, .card_activite_5, .card_activite_6{
@@ -765,20 +812,18 @@ p{
         margin-left: 35px;
     }
 
+    .categorie li{
+        margin-right: 30px;
+    }
+
     .info p{
         margin-left: 35px;
     }
-
-
-
-
 
     #section_globale{
         width: 100%;
         margin: auto;
     }
-
-    
 
     #hebergements{
         background-color: #F2F2F2;
@@ -814,8 +859,8 @@ p{
         width: 127px;
     }
 
-    .four_part{
-        flex-direction: column;
+    #activite h2{
+        margin-left: 30px;
     }
     
     .card_activite_5{
@@ -831,6 +876,14 @@ p{
    .card_activite_6{
         width: 300px;
         height: 210px;
+    }
+
+    .four_part{
+        flex-direction: column;
+    }
+
+    .a_propos{
+        margin-left: 10px;
     }
     
 @media screen and (min-width: 1750px){
