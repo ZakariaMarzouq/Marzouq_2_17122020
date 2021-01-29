@@ -9,13 +9,12 @@ body{
 
 a{
     text-decoration: none;
-    transition: color 1s;
     font-size: 1em;
 }
 
 a:hover{
-    text-decoration: none;
-    text-shadow: 8px 8px 8px rgb(170, 170, 170);   
+    transition: color 1s;
+    color: blue;
 }
 
 ul{
@@ -177,9 +176,9 @@ p{
 }
 
 .categorie li{
-    border-right:#cecdcd solid 2px;
-    border-bottom: #cecdcd solid 2px;
-    border-top: #cecdcd solid 2px;
+    border-right:#F2F2F2 solid 2px;
+    border-bottom:#F2F2F2 solid 2px;
+    border-top: #F2F2F2 solid 2px;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -204,22 +203,29 @@ p{
 }
 
 .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .info p{
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 1.2em;
 }
 
 .info i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border: 3px solid #F2F2F2;
-    padding: 5px 10px 5px 10px;
-    font-size: 0.8em;
+    padding: 5px 8px 5px 8px;
     border-radius: 50px;
     color: #0065FC;
-    margin-right: 10px;  
+    margin-right: 0px;
+    margin-left: 1rem;
+    min-width: 10px;
 }
 
 /* SECTION HEBERGEMENTS GLOBALE*/
@@ -482,16 +488,12 @@ p{
     }
 }
 
-@media screen and (min-width: 590px){
+@media screen and (min-width: 600px){
 
     /* HEADER */
     .header{
         justify-content: space-between;
         margin-bottom: 30px;
-    }
-
-    .menu{
-        margin-right: 20px;
     }
 
     .inscription{
@@ -522,19 +524,26 @@ p{
         font-size: 1.1em;
     }
 
+    .icone_maps{
+        padding: 17px 20px;
+    }
+
     .button{
         display: none;
     }
 
     .button_2{
         display: flex;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        padding: 20px 25px;
-        font-size: 1.2rem;
-        color: white;
         background-color: #0065FC;
-        border:none;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        padding: 0 1.5rem;
+        font-family: "Raleway", "Sans serif";
+        font-size: 1rem;
+        cursor: pointer;
+        align-items: center;
     }
     
     .filtre{
@@ -546,18 +555,6 @@ p{
     }
 
     /* SECTION GLOBALE + HEBERGEMENTS + LES +POPULAIRES */
-
-    #section_populaire:nth-child(1){
-        order: 1;
-    }
-
-    #hebergements:nth-child(2){
-        order: 2;
-    }
-
-    #activite:nth-child(3){
-        order: 3;
-    }
 
     #section_globale{
         flex-direction: row;
@@ -640,18 +637,6 @@ p{
 }
 
 @media screen and (min-width: 920px){
-    #section_populaire:nth-child(1){
-        order: 2;
-    }
-
-    #hebergements:nth-child(2){
-        order: 1;
-    }
-
-    #activite:nth-child(3){
-        order: 3;
-    }
-
     .card_populaire{
         width: 400px;
     }
@@ -678,6 +663,18 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    #section_populaire:nth-child(1){
+        order: 2;
+    }
+
+    #hebergements:nth-child(2){
+        order: 1;
+    }
+
+    #activite:nth-child(3){
+        order: 3;
     }
 
     .lien_activites{
@@ -800,8 +797,8 @@ p{
     }
 
     .nos_hebergements{
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 18%;
+        margin-right: 18%;
     }
 }
 
@@ -826,8 +823,23 @@ p{
         margin-right: 30px;
     }
 
+    .categorie li a{
+        margin-left: 20px;
+        margin-right: 35px;
+        font-size: 1.2em;
+    }
+
+    .info{
+        margin-bottom: 15px;
+    }
+
     .info p{
-        margin-left: 35px;
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    .info i{
+        margin-left: 30px;
     }
 
     #section_globale{
@@ -845,6 +857,10 @@ p{
         padding: 20px;
         justify-content: center;
         box-shadow: none;
+    }
+
+    #hebergements h2{
+        margin-bottom: 25px;
     }
 
     .card_hebergement{
