@@ -14,7 +14,6 @@ a{
 
 a:hover{
     transition: color 1s;
-    color: blue;
 }
 
 ul{
@@ -911,15 +910,20 @@ p{
     .a_propos{
         margin-left: 10px;
     }
+
+    li{        
+        transition: all 1s ease;
+        }
+
+    li:hover{        
+        transform:scale(1.15);
+        }
     
 @media screen and (min-width: 1750px){
     .card_hebergement{
         width: 335px;
     }
 }
-
-
-
 
 
 
