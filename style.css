@@ -42,6 +42,7 @@ p{
     flex-direction: row;
     align-items: center;
 }
+
 #logo{
     display: flex;
     flex-direction: row;
@@ -195,7 +196,7 @@ p{
     height: 100%;
     padding: 20px;
     border-radius: 50%;
-   }
+}
 
 .categorie li a{
     margin-left: 10px;
@@ -510,6 +511,11 @@ p{
         display: none;
     }
 
+    .lien_hebergements a{
+        font-weight: 400;
+        color: black;
+    }
+
     .lien_hebergements,.lien_activites, .lien_inscription{
         display: block;
         border: none;
@@ -520,6 +526,10 @@ p{
     .lien_inscription a{
         color: #0065FC;
         font-weight: 700;
+    }
+
+    p{
+        font-size: 1.1em;
     }
 
    .icone_maps{
@@ -832,12 +842,10 @@ p{
         transition: all 1s ease;
     }
 
-    /*
     a:hover{        
-        transform:scale(1.1);
-        transition: all 1s ease;
-        }
-        */
+        transform:scale(1.03);
+        transition: all 0.5s ease;
+    }
 
     .info{
         margin-bottom: 15px;
@@ -845,7 +853,7 @@ p{
 
     .info p{
         margin-left: 10px;
-        font-size: 1.5em;
+        font-size: 1.35em;
     }
 
     .info i{
@@ -921,7 +929,6 @@ p{
     .a_propos{
         margin-left: 10px;
     }
-
     
 @media screen and (min-width: 1750px){
     .card_hebergement{
