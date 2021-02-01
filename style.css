@@ -12,10 +12,6 @@ a{
     font-size: 1em;
 }
 
-a:hover{
-    transition: color 1s;
-}
-
 ul{
     list-style-type: none;
 }
@@ -175,6 +171,10 @@ p{
 }
 
 .categorie li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     border-right:#F2F2F2 solid 2px;
     border-bottom:#F2F2F2 solid 2px;
     border-top: #F2F2F2 solid 2px;
@@ -187,12 +187,15 @@ p{
 }
 
 .categorie li i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color:#DEEBFF;
     color: #0065FC;
-    padding: 18px;
+    height: 100%;
+    padding: 20px;
     border-radius: 50%;
-    font-size: 1.1rem;
-}
+   }
 
 .categorie li a{
     margin-left: 10px;
@@ -478,7 +481,7 @@ p{
     .lien_activites{
         border-bottom: solid #f2f2f2f2 4px;
         padding: 0 74px 15px 73px;
-        color: #333;
+        color: black;
         margin-right: 0;
     }
 
@@ -495,23 +498,23 @@ p{
         margin-bottom: 30px;
     }
 
+    .menu a:hover{
+        border-top: solid #0065FC;
+        color: #0065FC;
+        width: 100px;
+        font-weight: 500; 
+        padding-top: 43px;       
+    }
+
     .inscription{
         display: none;
     }
 
-    .lien_hebergements{
+    .lien_hebergements,.lien_activites, .lien_inscription{
+        display: block;
         border: none;
-        padding: 30px 20px 0 20px;
-        border-top: #0065FC solid 3px;
-        margin-top: -27px;
-    }
-
-    .lien_activites, .lien_inscription{
-        display: flex;
-        border: none;
-        padding: 30px 30px 0 30px;
-        border-top: white solid 2px;
-        margin-top: -25px;
+        padding: 30px 50px 0 0px;
+        font-size: 1.1em;
     }
 
     .lien_inscription a{
@@ -519,11 +522,7 @@ p{
         font-weight: 700;
     }
 
-    .lien_hebergements, .lien_activites, .lien_inscription{
-        font-size: 1.1em;
-    }
-
-    .icone_maps{
+   .icone_maps{
         padding: 17px 20px;
     }
 
@@ -539,7 +538,6 @@ p{
         border: none;
         border-radius: 0 1rem 1rem 0;
         padding: 0 1.5rem;
-        font-family: "Raleway", "Sans serif";
         font-size: 1rem;
         cursor: pointer;
         align-items: center;
@@ -820,6 +818,7 @@ p{
 
     .categorie li{
         margin-right: 30px;
+        
     }
 
     .categorie li a{
@@ -827,6 +826,18 @@ p{
         margin-right: 35px;
         font-size: 1.2em;
     }
+
+    .categorie li:hover{
+        transform:scale(1.1);
+        transition: all 1s ease;
+    }
+
+    /*
+    a:hover{        
+        transform:scale(1.1);
+        transition: all 1s ease;
+        }
+        */
 
     .info{
         margin-bottom: 15px;
@@ -911,13 +922,6 @@ p{
         margin-left: 10px;
     }
 
-    li{        
-        transition: all 1s ease;
-        }
-
-    li:hover{        
-        transform:scale(1.15);
-        }
     
 @media screen and (min-width: 1750px){
     .card_hebergement{
