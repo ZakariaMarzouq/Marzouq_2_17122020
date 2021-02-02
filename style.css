@@ -778,7 +778,7 @@ p{
 
     .first_part{
         display: flex;
-        float: column;
+        flex-direction: column;
     }
 
     .second_part{
@@ -935,12 +935,3 @@ p{
         width: 335px;
     }
 }
-
-
-
-
-
-
-
-
-
