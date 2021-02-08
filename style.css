@@ -931,6 +931,20 @@ p{
     }
     
 @media screen and (min-width: 1750px){
+    body{
+        width: 95vw;
+    }
+
+    .card_hebergement{
+        width: 300px;
+    }
+   
+}
+
+@media screen and (min-width: 2500px){
+    body{
+        width: 85vw;
+    }
     .card_hebergement{
         width: 335px;
     }
