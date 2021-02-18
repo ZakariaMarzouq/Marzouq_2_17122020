@@ -272,7 +272,7 @@ p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 330px; 
+    width: 325px; 
     height: 145px;
     padding: 5px;
     border-radius: 20px;
@@ -327,7 +327,7 @@ p{
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 330px; 
+    width: 325px; 
     height: 200px;
     border-radius: 20px;
     padding: 5px;
@@ -374,7 +374,7 @@ p{
 
 .card_activite{
     background-color: white;
-    width: 100%; 
+    width: 330px; 
     height: 188px;
     border-radius: 20px;
     box-shadow: 1px 1px 8px rgb(170, 170, 170);
@@ -418,6 +418,15 @@ p{
 }
 
 @media screen and (max-width: 320px){
+    body {
+        margin: auto;
+    }
+    #logo {
+        margin-left: 5px;
+    }
+    .presentation {
+        margin-left: 10px;
+    }
     .lien_hebergements{
         border-bottom: solid #0065FC 4px;
         padding: 0 40px 15px 40px;
@@ -437,8 +446,20 @@ p{
         margin-left: 140px;
     }
 
+    .button {
+        margin-left: -38px;
+    }
+
     #section_populaire, #hebergements, #activite{
         width: 100%;
+    }
+    #section_populaire {
+        flex-direction: row;
+    }
+
+    #section_populaire h2 {
+        padding-right: 65px;
+        margin-left: 5px;
     }
 
     .element_populaire{
@@ -447,10 +468,23 @@ p{
 
     .card_populaire{
         margin-right: 2px;
+        width: 280px;
+    }
+
+    .ico_populaire {
+        margin-right: 5px;
     }
 
     #hebergements h2, #activite h2{
         margin-left: 10px;
+    }
+
+    .card_hebergement {
+        width: 280px;
+    }
+
+    .card_activite {
+        width: 280px;
     }
 
     .footer{
@@ -779,7 +813,7 @@ p{
     }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     .header,  .presentation, .filtre h3{
         margin-left: 35px;
     }
@@ -898,7 +932,7 @@ p{
     .a_propos {
         margin-left: 10px;
     }
-    
+}     
 @media screen and (min-width: 1750px) {
     body {
         width: 95vw;
