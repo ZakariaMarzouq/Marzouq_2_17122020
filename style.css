@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Raleway-Regular';
-    src:url('/fonts/static/Raleway-Regular.ttf') format('truetype');
+    font-family: 'Raleway';
+    src:url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 /* GENERAL */
 
 body{
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway';
     font-size: 15px;
     width: 100%;
     margin: auto;
