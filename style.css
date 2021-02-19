@@ -2,9 +2,7 @@
     font-family: 'Raleway';
     src:url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
-
 /* GENERAL */
-
 body{
     font-family: 'Raleway';
     font-size: 15px;
@@ -37,7 +35,6 @@ p{
 }
 
 /* HEADER */
-
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +67,7 @@ p{
 
 .lien_hebergements{
     border-bottom: solid #0065FC 4px;
-    padding: 0 40px 15px 36px;
+    padding: 0 49px 15px 44px;
 }
 
 .lien_hebergements a{
@@ -80,7 +77,7 @@ p{
 
 .lien_activites{
     border-bottom: solid #f2f2f2f2 4px;
-    padding: 0 63px 15px 55px;
+    padding: 0 65px 15px 55px;
 }
 
 .menu ul{
@@ -90,7 +87,6 @@ p{
 }
 
 /* SECTION PRESENTATION + RECHERCHE*/
-
 .presentation{
     font-size: 1.1em;
     margin-left: 20px;
@@ -136,7 +132,7 @@ p{
 .button{
     border-radius: 20px;
     padding: 20px 20px;
-    margin-left: -15px;
+    margin-left: -35px;
     font-size: 1.2rem;
     color: white;
     background-color: #0065FC;
@@ -144,7 +140,6 @@ p{
 }
 
 /* SECTION FILTRES */
-
 .filtre{
     display: flex;
     flex-direction: column;
@@ -422,7 +417,7 @@ p{
     }
     .lien_hebergements{
         border-bottom: solid #0065FC 4px;
-        padding: 0px 26px 15px 29px;
+        padding: 0px 31px 15px 39px;
         color: #0065FC;
         font-weight: 500;
         margin-left: -11px;
@@ -430,7 +425,7 @@ p{
     
     .lien_activites{
         border-bottom: solid #f2f2f2f2 4px;
-        padding: 0px 50px 15px 39px;
+        padding: 0px 50px 15px 43px;
         color: #333;
         margin-right: -36px;
     }
@@ -440,7 +435,7 @@ p{
     }
 
     .button {
-        margin-left: -27px;
+        margin-left: -45px;
     }
 
     .recherche form input {
@@ -493,7 +488,7 @@ p{
 @media screen and (min-width: 425px){
     .lien_hebergements{
         border-bottom: solid #0065FC 4px;
-        padding: 0 60px 15px 60px;
+        padding: 0 63px 15px 63px;
         color: #0065FC;
         font-weight: 500;
         margin-left: 0px;
@@ -501,7 +496,7 @@ p{
     
     .lien_activites{
         border-bottom: solid #f2f2f2f2 4px;
-        padding: 0 62px 15px 68px;
+        padding: 0 73px 15px 70px;
         color: black;
         margin-right: 0;
     }
