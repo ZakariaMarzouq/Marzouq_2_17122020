@@ -1,12 +1,11 @@
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     src:url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 /* GENERAL */
 body{
     font-family: 'Raleway';
     font-size: 15px;
-    width: 100%;
     margin: auto;
 }
 
@@ -22,19 +21,23 @@ ul{
 
 h1 h2{
     font-size: 1.5em;
+    font-family: 'Raleway';
 }
 
 h3{
     font: 0.5em;
     color: black;
+    font-family: 'Raleway';
 }
 
 p{
     font-size: 1em;
     color: black;
+    font-family: 'Raleway';
 }
 
 /* HEADER */
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -406,6 +409,7 @@ p{
 .footer h3{
     margin-left: 20px;
 }
+
 
 @media screen and (max-width: 320px){
     body, #logo {
@@ -1001,6 +1005,18 @@ p{
     .lien_activites {
         margin-left: 55px;
     }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .presentation p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .inscription {
+        margin-left: 1300px;
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1017,23 +1033,35 @@ p{
     }
 }
 
-@media screen and (min-width: 1750px) {
-    body {
-        width: 95vw;
-    }
-
+@media screen and (min-width: 1700px) {
     .inscription {
-        margin-left: 1400px;
+        margin-left: 1450px;
     }
 
     .card_hebergement {
         width: 300px;
     }
+    .lien_activites {
+        margin-left: 75px;
+    }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
     .inscription {
         margin-left: 1550px;
+    }
+
+    .card_hebergement {
+        width: 300px;
+    }
+    .lien_activites {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .inscription {
+        margin-left: 1600px;
     }
 
     .lien_hebergements {
