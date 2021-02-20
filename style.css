@@ -1,8 +1,6 @@
-@font-face {
-    font-family: 'Raleway-Regular';
-    src:url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
 /* GENERAL */
+
 body{
     font-family: 'Raleway';
     font-size: 15px;
@@ -21,19 +19,16 @@ ul{
 
 h1 h2{
     font-size: 1.5em;
-    font-family: 'Raleway';
 }
 
 h3{
     font: 0.5em;
     color: black;
-    font-family: 'Raleway';
 }
 
 p{
     font-size: 1em;
     color: black;
-    font-family: 'Raleway';
 }
 
 /* HEADER */
