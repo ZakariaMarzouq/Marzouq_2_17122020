@@ -214,8 +214,7 @@ p{
     min-width: 10px;
 }
 
-/* SECTION HEBERGEMENTS GLOBALE*/
-
+/* SECTION HEBERGEMENTS GLOBALE */
 #section_globale{
     display: flex;
     flex-direction: column;
@@ -223,7 +222,6 @@ p{
 }
 
 /* SECTION POPULAIRES */
-
 #section_populaire{
     display: flex;
     flex-wrap: wrap;
@@ -290,7 +288,6 @@ p{
 }
 
 /* SECTION HEBERGEMENT A MARSEILLE */
-
 #hebergements{
     display: flex;
     flex-direction: column;
@@ -343,7 +340,6 @@ p{
 }
 
 /* SECTION ACTIVITES */
-
 #activite{
     display: flex;
     flex-direction:column;
@@ -378,7 +374,6 @@ p{
 }
 
 /* SECTION FOOTER */
-
 .footer{
     width: 100%; 
     height: 450px;
@@ -404,7 +399,6 @@ p{
 .footer h3{
     margin-left: 20px;
 }
-
 
 @media screen and (max-width: 320px){
     body, #logo {
@@ -523,6 +517,7 @@ p{
 
     #logo {
         align-items: baseline;
+        width: 90%;
     }
 
     .menu a:hover{
@@ -532,17 +527,9 @@ p{
         font-weight: 500; 
         padding-top: 43px;       
     }
-
-    .inscription {
-        margin-left: 550px;
-    }
-
+    
     .lien_hebergements {
-        margin-left: -450px;
-    }
-
-    .lien_activites {
-        margin-left: 50px;
+        margin-left: -400px;
     }
 
     .lien_hebergements a{
@@ -667,44 +654,20 @@ p{
         margin-left: 65px;
     }
 
-    .inscription {
-        margin-left: 400px;
+    #logo {
+        width: 94%;
     }
-
-    .lien_hebergements {
-        margin-left: -400px;
-    }
-
-    .lien_activites {
-        margin-left: 15px;
-    }
-}
-
-@media screen and (min-width: 768px) {
     
-    .inscription {
-        margin-left: 550px;
-    }
-
-    .lien_hebergements {
-        margin-left: -400px;
-    }
-
     .lien_activites {
         margin-left: 15px;
     }
 }
 
 @media screen and (min-width: 920px){
-
-    .inscription {
-        margin-left: 700px;
-    }
-
     .card_populaire, .card_hebergement{
         width: 400px;
     }
-
+     
     .img_card_populaire{
         width: 200px;
     }
@@ -726,6 +689,10 @@ p{
         align-items: center;
     }
 
+    .lien_activites {
+        margin-left: 5px;
+    }
+
     #section_populaire:nth-child(1){
         order: 2;
     }
@@ -738,18 +705,6 @@ p{
         order: 3;
     }
 
-   
-    .inscription {
-        margin-left: 800px;
-    }
-
-    .lien_hebergements {
-        margin-left: -400px;
-    }
-
-    .lien_activites {
-        margin-left: 15px;
-    }
     #hebergements h2{
         margin-left: 23px;
     }
@@ -860,20 +815,16 @@ p{
         margin-left: 35px;
     }
 
-    .inscription {
-        margin-left: 1050px;
+    #logo {
+        width: 94%;
     }
 
     .lien_hebergements {
-        margin-left: -500px;
+        margin-left: -550px;
     }
 
     .lien_activites {
         margin-left: 15px;
-    }
-
-    #logo{
-        margin-left: 0;
     }
 
     .categorie li{
@@ -915,8 +866,7 @@ p{
     }
 
     .lien_activites{
-        margin: 0 70px;
-        
+        margin: 0 60px;
     }
 
     #hebergements h2{
@@ -988,18 +938,7 @@ p{
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .inscription {
-        margin-left: 1200px;
-    }
-
-    .lien_hebergements {
-        margin-left: -480px;
-    }
-
-    .lien_activites {
-        margin-left: 55px;
-    }
+@media screen and (min-width: 1400px) {
     h1 {
         font-size: 1.8rem;
     }
@@ -1008,63 +947,9 @@ p{
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .inscription {
-        margin-left: 1300px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .inscription {
-        margin-left: 1300px;
-    }
-
-    .lien_hebergements {
-        margin-left: -550px;
-    }
-
-    .lien_activites {
-        margin-left: 50px;
-    }
-}
-
 @media screen and (min-width: 1700px) {
-    .inscription {
-        margin-left: 1450px;
-    }
-
     .card_hebergement {
         width: 300px;
-    }
-    .lien_activites {
-        margin-left: 75px;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .inscription {
-        margin-left: 1550px;
-    }
-
-    .card_hebergement {
-        width: 300px;
-    }
-    .lien_activites {
-        margin-left: 75px;
-    }
-}
-
-@media screen and (min-width: 1900px) {
-    .inscription {
-        margin-left: 1600px;
-    }
-
-    .lien_hebergements {
-        margin-left: -600px;
-    }
-
-    .lien_activites {
-        margin-left: 80px;
     }
 }
 
@@ -1074,12 +959,5 @@ p{
     }
     .card_hebergement {
         width: 335px;
-    }
-    .inscription {
-        margin-left: 1850px;
-    }
-
-    .lien_hebergements {
-        margin-left: -650px;
     }
 }
